@@ -1,0 +1,98 @@
+#wrapper {position: relative;}.ui_tpicker_time_input{width: 100%;}
+/* AJUSTES LOGIN BOX*/
+.login-box {
+	margin: auto;
+	width: 510px;
+}
+.login-box img {width: 50%;}/* FIM AJUSTES LOGIN BOX*/
+/* AJUSTES TELA LOGIN - REC SENHA - CADASTRO  */
+.topo {
+	//background-color: white;
+	display: block;
+	text-align:center;
+	padding:15px;
+}
+
+.topo img {
+    width: 20%;
+	margin-top: 2%;
+}
+.rodape {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:300px;   /* altura do rodape */
+   background:white;
+   text-align:center;
+   padding: 25px 15px 10px 15px;
+   border-top: 6px solid #01272f;
+   z-index: 1000;
+}
+
+.rodape img {
+	padding: 0 15px 0 15px;
+	height: 45px;
+	width: auto;
+}
+
+.creditos {
+	padding: 25px 0 0 0;
+	color: #929292;
+	font-size: 16px;
+	text-align:center;
+}
+
+.creditos a{
+	color: #929292;
+}
+
+.creditos a:hover{
+	color: #3c8dbc;
+}
+
+
+/*.page-header-fixed {
+background: #343434 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+}*/
+
+/*CORES*/
+.bg-ch-red, .cleanhouse-red {
+	background-color:#ad0000;
+	color:#fff;
+}
+.cleanhouse-red i {
+	color:#fff;
+}
+.cleanhouse-yellow {
+	background-color:#eded00;
+}
+.cleanhouse-yellow i {
+	color:#333;
+}
+
+@media (max-width:1180px) and (min-width:992px) {
+	.large-date {
+		float: none !important;
+	}
+}
+@media (max-width:1270px) and (min-width:992px) {
+	.clean-options {
+		width: 100%;
+	}
+	.clean-options a, .clean-options button {
+		width: 100%;
+		margin-top: 5px;
+	}
+}
+
+/* INICIO AJUSTES TELA LOGIN MOBILE  */
+@media (max-width:767px) {.login-box {width: 95%;margin-top: 4px;}.topo img {width: 75%;margin-top: 1%;}
+}/* FIM AJUSTES TELA LOGIN MOBILE  */
+/* INICIO AJUSTE TOP BAR MOBILE  */
+.skin-black-light .main-header > .logo {background-color: #fff !important;}
+/* FIM AJUSTE TOP BAR MOBILE  */

@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create5c50790d02910CleanUserTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        if(! Schema::hasTable('clean_user')) {
+            Schema::create('clean_user', function (Blueprint $table) {
+                $table->integer('clean_id')->unsigned()->nullable();
+                $table->foreign('clean_id', 'fk_p_251657_251643_user_c_5c50790d02a57')->references('id')->on('cleans')->onDelete('cascade');
+                $table->integer('user_id')->unsigned()->nullable();
+                $table->foreign('user_id', 'fk_p_251643_251657_clean__5c50790d02b0c')->references('id')->on('users')->onDelete('cascade');
+                $table->decimal('value', 15, 2)->nullable();
+            });
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('clean_user');
+    }
+}
